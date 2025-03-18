@@ -60,17 +60,17 @@ function App() {
   };
 
   const toggleTaskCompletion = async (taskId) => {
-    const updatedTasks = tasks.map((task) =>
-      task.id === taskId ? { ...task, completed: !task.completed } : task
-    );
-    setTasks(updatedTasks);
+    const task = tasks.find((task) => task.id === taskId);
+    const updatedTask = { ...task, completed: !task.completed };
 
-    // Update task in the backend (optional)
-    await fetch(`http://localhost:8000/tasks/${taskId}`, {
+    const response = await fetch(`http://localhost:8000/tasks/${taskId}`, {
       method: 'PUT',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ completed: updatedTasks.find((task) => task.id === taskId).completed }),
+      body: JSON.stringify({ completed: updatedTask.completed }),
     });
+
+    const data = await response.json();
+    setTasks(tasks.map((task) => (task.id === taskId ? data : task)));
   };
 
   const startListening = () => {
