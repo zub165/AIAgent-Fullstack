@@ -1,43 +1,65 @@
-# Python virtual environment
+# Python (Backend)
 venv/
 ENV/
 env/
-
-# Python bytecode
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Distribution / packaging
 dist/
 build/
 *.egg-info/
-
-# Large files and macOS files
-*.dylib
-*.so
-.DS_Store
-
-# Local configuration
-*.env
-.env
-.env.local
-
-# Logs
-*.log
-logs/
-
-# Testing
 .coverage
 htmlcov/
 .pytest_cache/
 
-# IDE-specific files
+# JavaScript/Node (Frontend)
+node_modules/
+npm-debug.log
+yarn-error.log
+.cache/
+dist/
+build/
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# IDEs and Editors
 .idea/
 .vscode/
 *.swp
 *.swo
+.DS_Store
+.project
+.classpath
+.settings/
+*.sublime-*
+
+# OS Files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency files
+package-lock.json
+yarn.lock
+
+# Large files and binaries
+*.dylib
+*.so
+*.dll
 
 # Other
 *.bak
-*.tmp 
+*.tmp
+.env.local
+.env 
