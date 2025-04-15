@@ -1,0 +1,146 @@
+/* Add these styles at the end of the file */
+
+/* Formatted message styling */
+.bot-message strong {
+    font-weight: 600;
+    color: #4a5568;
+}
+
+.bot-message ol {
+    padding-left: 1.5rem;
+    margin: 0.5rem 0;
+    list-style-position: outside;
+    counter-reset: none; /* Don't reset counter, use specified values */
+}
+
+.bot-message li {
+    margin-bottom: 0.75rem;
+    padding-left: 0.5rem;
+    line-height: 1.5;
+    position: relative;
+}
+
+.bot-message li::marker {
+    font-weight: 600;
+    color: #6a11cb;
+}
+
+/* Microphone pulsing dot */
+.pulsing-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #f56565;
+    animation: pulse-red 1.5s infinite;
+}
+
+@keyframes pulse-red {
+    0% {
+        transform: translate(-50%, -50%) scale(0.95);
+        box-shadow: 0 0 0 0 rgba(245, 101, 101, 0.7);
+    }
+    
+    70% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 10px rgba(245, 101, 101, 0);
+    }
+    
+    100% {
+        transform: translate(-50%, -50%) scale(0.95);
+        box-shadow: 0 0 0 0 rgba(245, 101, 101, 0);
+    }
+}
+
+.voice-button.active {
+    background-color: #f56565;
+    position: relative;
+}
+
+/* Translation-related styling */
+.translating {
+    position: relative;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.translating::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+
+.translated-message {
+    border-left: 3px solid #3182ce;
+    padding-left: 10px !important;
+}
+
+.translation-error {
+    border-left: 3px solid #e53e3e;
+}
+
+.translation-status {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2d3748;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.translation-status.visible {
+    opacity: 1;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+    background-color: #4a5568;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4299e1;
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+/* Auto-translate button styling */
+.toolbar-btn.active {
+    background-color: #4299e1;
+    color: white;
+}
+
+.toolbar-btn.active .tooltip {
+    background-color: #4299e1;
+}
+
+.toolbar-btn.active .tooltip::before {
+    border-top-color: #4299e1;
+} 
