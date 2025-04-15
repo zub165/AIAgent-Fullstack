@@ -1,0 +1,8 @@
+condition,symptoms,recommended_action
+Heart Attack,"Chest pain, shortness of breath, nausea, sweating","Call 911 immediately, chew aspirin if not allergic, rest, do not drive yourself"
+Stroke,"Sudden numbness, confusion, trouble speaking, loss of balance","Call 911 immediately, note the time symptoms started, keep person safe and comfortable"
+Severe Bleeding,"Uncontrolled bleeding, spurting blood, deep wound","Apply firm pressure with clean cloth, call 911, keep wound elevated if possible"
+Burns (Severe),"Deep burns, charred skin, burns on face/hands/genitals","Call 911, do not remove burned clothing, cover with clean cloth, do not apply ice"
+Choking,"Cannot breathe, speak, or cough","Call 911, perform Heimlich maneuver if trained, encourage coughing if possible"
+Seizure,"Shaking, loss of consciousness, confusion after","Protect from injury, do not restrain, turn on side, call 911 if lasts >5 min or first seizure"
+Allergic Reaction (Anaphylaxis),"Swelling, difficulty breathing, hives, fainting","Call 911, use epinephrine auto-injector if available, keep person lying down" 

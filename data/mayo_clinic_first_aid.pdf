@@ -1,0 +1,52 @@
+%PDF-1.4
+% Simple PDF with first aid guidelines
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 600 >>
+stream
+BT
+/F1 18 Tf
+70 750 Td
+(Mayo Clinic First Aid Quick Reference) Tj
+/F1 12 Tf
+70 720 Td
+(Heart Attack: Call 911, chew aspirin if not allergic, rest, do not drive yourself.) Tj
+70 700 Td
+(Stroke: Call 911, note time symptoms started, keep person safe and comfortable.) Tj
+70 680 Td
+(Severe Bleeding: Apply firm pressure, call 911, keep wound elevated if possible.) Tj
+70 660 Td
+(Burns: Cool with water, cover with clean cloth, call 911 for severe burns.) Tj
+70 640 Td
+(Choking: Call 911, perform Heimlich if trained, encourage coughing if possible.) Tj
+70 620 Td
+(Seizure: Protect from injury, do not restrain, turn on side, call 911 if >5 min or first seizure.) Tj
+70 600 Td
+(Allergic Reaction: Call 911, use epinephrine if available, keep person lying down.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000061 00000 n 
+0000000116 00000 n 
+0000000272 00000 n 
+0000000702 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+800
+%%EOF 
