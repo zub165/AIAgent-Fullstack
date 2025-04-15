@@ -1,0 +1,43 @@
+# Python virtual environment
+venv/
+ENV/
+env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Large files and macOS files
+*.dylib
+*.so
+.DS_Store
+
+# Local configuration
+*.env
+.env
+.env.local
+
+# Logs
+*.log
+logs/
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+
+# IDE-specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Other
+*.bak
+*.tmp 

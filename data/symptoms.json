@@ -1,0 +1,44 @@
+{
+  "chest pain": {
+    "possible_causes": ["Heart attack", "Angina", "Muscle strain", "Anxiety"],
+    "next_steps": [
+      "Ask about location, type, and duration of pain.",
+      "Check for associated symptoms: shortness of breath, sweating, nausea, pain radiating to arm/jaw.",
+      "If severe, sudden, or with red flag symptoms, call 911 immediately.",
+      "If mild and no risk factors, rest and monitor."
+    ]
+  },
+  "shortness of breath": {
+    "possible_causes": ["Asthma", "Heart failure", "Pneumonia", "Anxiety", "Allergic reaction"],
+    "next_steps": [
+      "Ask about onset, triggers, and associated symptoms (wheezing, chest pain, swelling).",
+      "If severe, sudden, or with blue lips/face, call 911 immediately.",
+      "If mild, rest and monitor. Use inhaler if prescribed."
+    ]
+  },
+  "severe bleeding": {
+    "possible_causes": ["Deep cut", "Trauma", "Bleeding disorder"],
+    "next_steps": [
+      "Apply firm pressure with a clean cloth.",
+      "Elevate the wound if possible.",
+      "Call 911 if bleeding does not stop after 10 minutes or is spurting."
+    ]
+  },
+  "burn": {
+    "possible_causes": ["Thermal burn", "Chemical burn", "Electrical burn"],
+    "next_steps": [
+      "Cool the burn with running water for at least 10 minutes.",
+      "Do not apply ice or ointments.",
+      "Cover with a clean, non-stick bandage.",
+      "Call 911 for deep, large, or facial burns."
+    ]
+  },
+  "allergic reaction": {
+    "possible_causes": ["Food allergy", "Insect sting", "Medication reaction"],
+    "next_steps": [
+      "Look for swelling, hives, or difficulty breathing.",
+      "Use epinephrine auto-injector if available.",
+      "Call 911 if symptoms are severe or involve breathing/swallowing."
+    ]
+  }
+} 
